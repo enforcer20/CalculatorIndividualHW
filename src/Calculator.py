@@ -9,9 +9,12 @@ def subtraction(a, b):
 def multiplication(a, b):
     return a * b
 
+
 def division(a, b):
     return a / b
 
+def square(a):
+    return a ** 2
 
 class Calculator:
     result = 0
@@ -33,4 +36,8 @@ class Calculator:
 
     def divide(self, a, b):
         self.result = division(a, b)
+        return self.result
+
+    def square(self, a):
+        self.result = square(a)
         return self.result
