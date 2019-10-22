@@ -6,6 +6,9 @@ def subtraction(a, b):
     return a - b
 
 
+import math
+
+
 def multiplication(a, b):
     return a * b
 
@@ -17,8 +20,10 @@ def division(a, b):
 def square(a):
     return a ** 2
 
+
 def squareroot(a):
-    return a ** 0.5
+    return math.sqrt(a)
+
 
 class Calculator:
     result = 0
