@@ -32,11 +32,14 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.multiply(int(row['Value 1']), int(row['Value 2'])), int(row['Result']))
             self.assertEqual(self.calculator.result, int(row['Result']))
 
-    # def test_divide_method_calculator(self):
-    #     test_data = CsvReader('./src/Division.csv').data
-    # for row in test_data:
-    #        a = row['Value 1']
-    #      b = row['Value 2']
+    def test_divide_method_calculator(self):
+        test_data = CsvReader('./src/Division.csv').data
+        for row in test_data:
+            x = float(row['Value 1'])
+            y = float(row['Value 2'])
+            z = float(row['Result'])
+            self.assertEqual(self.calculator.divide(x, y), round(z, 7))
+            self.assertEqual(self.calculator.result, round(z, 7))
     #     expected_result = int(row['Result'])
     #    result = Calculator.divide(a, b)
     #   new_division = round(result, 7)

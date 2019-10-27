@@ -21,7 +21,7 @@ def multiplication(a, b):
 def division(a, b):
     a = int(a)
     b = int(b)
-    return a / b
+    return round(b / a, 7)
 
 
 def square(a):
