@@ -25,11 +25,13 @@ def division(a, b):
 
 
 def square(a):
+    a = int(a)
     return a ** 2
 
 
-def squareroot(a):
-    return math.sqrt(a)
+def root(a):
+    a = int(a)
+    return round(math.sqrt(a), 8)
 
 
 class Calculator:
@@ -59,5 +61,5 @@ class Calculator:
         return self.result
 
     def sqrt(self, a):
-        self.result = squareroot(a)
+        self.result = root(a)
         return self.result
