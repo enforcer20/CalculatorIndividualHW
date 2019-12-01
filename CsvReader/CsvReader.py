@@ -3,7 +3,6 @@ from pprint import pprint
 
 
 class CsvReader:
-    #data = []
 
     def __init__(self, filepath):
         self.data = []
@@ -11,7 +10,7 @@ class CsvReader:
             csv_data = csv.DictReader(text_data, delimiter=',')
             for row in csv_data:
                 self.data.append(row)
-        pprint(self.data)
+        ##pprint(self.data)
         pass
 
 
