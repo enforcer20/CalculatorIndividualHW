@@ -1,37 +1,9 @@
-import math
-
-
-def addition(a, b):
-    a = int(a)
-    b = int(b)
-    return a + b
-
-
-def subtraction(a, b):
-    a = int(a)
-    b = int(b)
-    return b - a
-
-
-def multiplication(a, b):
-    c = a * b
-    return c
-
-
-def division(a, b):
-    a = int(a)
-    b = int(b)
-    return round(b / a, 7)
-
-
-def square(a):
-    a = int(a)
-    return a ** 2
-
-
-def root(a):
-    a = int(a)
-    return round(math.sqrt(a), 8)
+from Calculator.Addition import addition
+from Calculator.Subtraction import subtraction
+from Calculator.Division import division
+from Calculator.Multiplication import multiplication
+from Calculator.Square import square
+from Calculator.Sqrt import root
 
 
 class Calculator:
